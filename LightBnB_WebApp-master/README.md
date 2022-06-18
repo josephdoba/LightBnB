@@ -1,6 +1,10 @@
 # LightBnB
 
-## Project Structure
+## An AirBnB clone during my studies at Lighthouse labs
+
+In this project, we learn about SQL, and gain an understanding of Relation Databases, and RDBMS's. For this project specifically we used Postgres. All of the work I did is located in `database.js`.
+
+#### Project Structure
 
 ```
 ├── public
@@ -40,4 +44,4 @@
   * `server.js` is the entry point to the application. This connects the routes to the database.
   * `apiRoutes.js` and `userRoutes.js` are responsible for any HTTP requests to `/users/something` or `/api/something`. 
   * `json` is a directory that contains a bunch of dummy data in `.json` files.
-  * `database.js` is responsible for all queries to the database. It doesn't currently connect to any database, all it does is return data from `.json` files.
+  * `database.js` is responsible for all queries to the database. The work on it is to demonstrate how to connect and work with databases in the scope of web development. It has been refactored to connect to a local database. Originally it retrieved all data from internal `.json` files.
