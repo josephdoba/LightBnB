@@ -4,10 +4,7 @@
 
 In this project, we learned about SQL, and gained an understanding of Relation Databases and RDBMS's.. For this project specifically we used Postgres. All of the work I did is located in `database.js`.
 
-### Setup:
-
-* setup instructions such as how to install and run
-* consider adding some screenshots of the project.
+![](https://github.com/josephdoba/LightBnB/docs/lightbnb-demo.png)
 
 ### Depenencies: 
 
