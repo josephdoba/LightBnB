@@ -114,16 +114,17 @@ const getAllProperties = (options, limit = 10) => {
   WHERE 1=1
   `;
 
+
   if (options.city) {
     queryParams.push(`%${options.city}%`);
     queryString += `AND city LIKE $${queryParams.length}`;
   }
   if (options.minimum_price_per_night) {
-    queryParams.push(options.minimum_price_per_night * 100);
+    queryParams.push(options.minimum_price_per_night);
     queryString += `AND cost_per_night >= $${queryParams.length}`;
   }
   if (options.maximum_price_per_night) {
-    queryParams.push(options.maximum_price_per_night * 100);
+    queryParams.push(options.maximum_price_per_night);
     queryString += `AND cost_per_night <= $${queryParams.length}`;
   }
   
@@ -194,6 +195,10 @@ const addProperty = function(property) {
   return pool.query(propertyString, propertyParams)
     .then(res => {
       console.log(res.rows);
+      console.log('Type of: -------------------------');
+      console.log(typeof(property.cost_per_night));
+      console.log('Actual Value: -------------------------------');
+      console.log(property.cost_per_night);
       return res.rows;
     })
     .catch(err => {
