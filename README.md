@@ -6,6 +6,12 @@ In this project, we learned about SQL, and gained an understanding of Relation D
 
 ![](https://github.com/josephdoba/LightBnB/blob/main/docs/LightBnB-demo.png)
 
+## Getting Started:
+
+* Install the dependencies required with the command: `npm install` - If you do not have npm installed, you can install it by running:  `npm install -g npm`
+
+* Run `npm start` to start the server, and you can view the page locally on `localhost:3000`.
+
 ### Depenencies: 
 
 * bcrypt
