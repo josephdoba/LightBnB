@@ -195,10 +195,6 @@ const addProperty = function(property) {
   return pool.query(propertyString, propertyParams)
     .then(res => {
       console.log(res.rows);
-      console.log('Type of: -------------------------');
-      console.log(typeof(property.cost_per_night));
-      console.log('Actual Value: -------------------------------');
-      console.log(property.cost_per_night);
       return res.rows;
     })
     .catch(err => {
