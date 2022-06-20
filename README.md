@@ -2,7 +2,6 @@
 
 ## An AirBnB clone during my studies at Lighthouse labs
 
-<<<<<<< HEAD
 In this project, we learned about SQL, and gained an understanding of Relation Databases and RDBMS's.. For this project specifically we used Postgres. All of the work I did is located in `database.js`.
 
 ### Setup:
@@ -18,9 +17,6 @@ In this project, we learned about SQL, and gained an understanding of Relation D
 * express
 * nodemon
 * pg
-=======
-In this project, we learned about SQL, and gained an understanding of Relation Databases and RDBMS's. For this project specifically we used Postgres. All of the work I did is located in `database.js`.
->>>>>>> 988637270fca820bb27469c222b28230f932f5e4
 
 #### Project Structure
 
